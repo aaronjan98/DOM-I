@@ -37,8 +37,13 @@ const siteContent = {
   },
 };
 
-// const nav = document.querySelectorAll("nav");
-// nav.textContent = siteContent["nav"]["nav-item-6"]
+const nav = document.querySelectorAll("nav a");
+nav[0].textContent = siteContent["nav"]["nav-item-1"]
+nav[1].textContent = siteContent["nav"]["nav-item-2"]
+nav[2].textContent = siteContent["nav"]["nav-item-3"]
+nav[3].textContent = siteContent["nav"]["nav-item-4"]
+nav[4].textContent = siteContent["nav"]["nav-item-5"]
+
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
