@@ -66,6 +66,7 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 const header = document.querySelector("h1");
 header.textContent = siteContent["cta"]["h1"]
+header.style.wordSpacing = "100vw";
 
 const button = document.querySelector("button");
 button.textContent = siteContent["cta"]["button"]
@@ -98,5 +99,10 @@ contactPar[0].textContent = siteContent['contact']['address']
 contactPar[1].textContent = siteContent['contact']['phone']
 contactPar[2].textContent = siteContent['contact']['email']
 
+
 const footer = document.querySelector('footer');
 footer.textContent = siteContent['footer']['copyright']
+
+
+// siteContent['contact']['address'].charAt(18).style.wordBreak = "break-all";
+contactPar[0].style.width = "145px";
