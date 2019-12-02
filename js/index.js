@@ -72,3 +72,11 @@ middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 const contactSec = document.querySelector('.contact h4');
 contactSec.textContent = siteContent['contact']['contact-h4']
+
+const contactPar = document.querySelectorAll('.contact p');
+contactPar[0].textContent = siteContent['contact']['address']
+contactPar[1].textContent = siteContent['contact']['phone']
+contactPar[2].textContent = siteContent['contact']['email']
+
+const footer = document.querySelector('footer');
+footer.textContent = siteContent['footer']['copyright']
